@@ -9,6 +9,9 @@
     },
     "dev": {
       "cache": false
+    },
+    "docs#dev": {
+      "dependsOn": ["ui#build"]
     }
   }
 }
