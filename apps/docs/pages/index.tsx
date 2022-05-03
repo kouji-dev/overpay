@@ -1,10 +1,15 @@
-import { Button } from "ui";
+import HeadingPreview from "../components/HeadingPreview";
+import BodyPreview from "../components/BodyPreview";
+import ButtonPreview from "../components/ButtonPreview";
+
 
 export default function Docs() {
-  return (
-    <div>
-      <h1>Docs</h1>
-      <Button />
-    </div>
-  );
+    return (
+        <div className="flex flex-col gap-y-10">
+            <HeadingPreview />
+            <BodyPreview />
+            <ButtonPreview />
+        </div>
+    );
 }
+

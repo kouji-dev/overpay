@@ -9,7 +9,7 @@ const headings = [
     {size: 18, tag: 'h6'},
 ]
 
-const HeadingReview = () => {
+const HeadingPreview = () => {
     return (
         <div>
             <h3>Heading</h3>
@@ -37,4 +37,4 @@ const Heading = ({tag, children, size}: any) => {
         </div>
     )
 }
-export default HeadingReview;
+export default HeadingPreview;
