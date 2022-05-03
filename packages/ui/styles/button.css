@@ -1,0 +1,50 @@
+.btn {
+    @apply text-white font-semibold;
+}
+
+/*type*/
+
+.btn-primary {
+    @apply bg-primary-base;
+}
+
+.btn-secondary {
+    @apply bg-white border-2 border-primary-base text-primary-base;
+}
+
+/*size*/
+
+.btn-lg {
+    @apply rounded-btnlg py-4 text-lg;
+}
+
+.btn-md {
+    @apply rounded-btnlg py-3 text-md;
+}
+
+.btn-sm {
+    @apply rounded-btnsm py-1 text-sm;
+}
+
+/*state*/
+
+.btn-primary:hover, .btn-primary.btn-hover {
+    @apply bg-primary-dim;
+}
+
+.btn-secondary:hover, .btn-secondary.btn-hover {
+    @apply border-primary-dim text-primary-dim;
+}
+
+.btn-primary:disabled, .btn-primary.btn-disabled,
+.btn-secondary:disabled, .btn-secondary.btn-disabled {
+    @apply cursor-not-allowed;
+}
+
+.btn-primary:disabled, .btn-primary.btn-disabled {
+    @apply bg-primary-300;
+}
+
+.btn-secondary:disabled, .btn-secondary.btn-disabled {
+    @apply border-primary-300 text-primary-300;
+}
