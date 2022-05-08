@@ -57,8 +57,22 @@ const DEFAULT_THEME = {
         xs: '10px'
     },
     borderRadius: {
-        btnlg: '12px',
-        btnsm: '8px'
+        lg: '12px',
+        sm: '8px'
+    },
+    spacing: {
+        sm: '8px',
+        md: '16px',
+        lg: '32px'
+    },
+    animation: {
+        fadeIn: 'fadeIn 700ms easeIn'
+    },
+    keyframes: {
+        fadeIn: {
+            '0%': {opacity: '0'},
+            '100%': {opacity: '1'}
+        }
     }
 }
 const THEMES = {

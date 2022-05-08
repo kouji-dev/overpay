@@ -1,0 +1,51 @@
+/*default*/
+.dropdown {
+    @apply relative
+        p-md
+        rounded-lg border-2 border-gray-300
+        min-w-[330px] w-fit
+}
+
+.dropdown-select {
+    @apply flex justify-between
+    text-gray-500 cursor-pointer
+}
+
+.dropdown-placeholder {
+    @apply text-md align-middle
+}
+
+.dropdown-body {
+    @apply bg-white shadow-lg
+    w-full p-md
+    rounded-lg
+    hidden
+}
+
+/*open*/
+.dropdown-open {
+    @apply border-primary-base
+}
+
+.dropdown-open .dropdown-select {
+    @apply text-gray-900;
+}
+
+.dropdown-open .dropdown-body {
+    @apply block
+    absolute -bottom-10 -my-lg left-0 z-10 animate-fadeIn;
+}
+
+/*disabled*/
+.dropdown-disabled {
+    @apply border border-primary-300;
+}
+
+.dropdown-disabled .dropdown-select {
+    @apply text-primary-300;
+}
+
+/*@keyframes fadeIn {*/
+/*    0% {opacity:0;}*/
+/*    100% {opacity:1;}*/
+/*}*/
