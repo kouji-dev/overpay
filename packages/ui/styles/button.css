@@ -1,0 +1,69 @@
+.btn {
+    @apply text-white font-semibold relative min-w-[160px];
+}
+
+/*type*/
+
+.btn-primary {
+    @apply bg-primary-base;
+}
+
+.btn-secondary {
+    @apply bg-white border-2 border-primary-base text-primary-base;
+}
+
+.btn-block {
+    @apply w-full;
+}
+
+/*size*/
+
+.btn-lg {
+    @apply rounded-lg text-lg min-h-[56px];
+}
+
+.btn-md {
+    @apply rounded-lg py-3 text-md min-h-[48px];
+}
+
+.btn-sm {
+    @apply rounded-sm text-sm min-h-[32px];
+}
+
+/*state*/
+
+.btn-primary:hover, .btn-primary.btn-hover {
+    @apply bg-primary-dim;
+}
+
+.btn-secondary:hover, .btn-secondary.btn-hover {
+    @apply border-primary-dim text-primary-dim;
+}
+
+.btn-primary:disabled, .btn-primary.btn-disabled,
+.btn-secondary:disabled, .btn-secondary.btn-disabled {
+    @apply cursor-not-allowed;
+}
+
+.btn-primary:disabled, .btn-primary.btn-disabled {
+    @apply bg-primary-300;
+}
+
+.btn-secondary:disabled, .btn-secondary.btn-disabled {
+    @apply border-primary-300 text-primary-300;
+}
+
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
