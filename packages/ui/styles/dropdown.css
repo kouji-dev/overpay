@@ -38,7 +38,7 @@
 
 /*disabled*/
 .dropdown-disabled {
-    @apply border border-primary-300;
+    @apply border border-primary-300 pointer-events-none;
 }
 
 .dropdown-disabled .dropdown-select {

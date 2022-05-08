@@ -18,6 +18,7 @@ export const Dropdown: FC<PropsWithChildren<Props>> = ({shouldOpen, disabled, pl
     })
 
     const onClick: MouseEventHandler<HTMLDivElement> = (e) => {
+        if(!disabled)
         setOpen(true)
     }
 
