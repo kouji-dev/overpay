@@ -20,5 +20,8 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "npm@7.24.0"
+  "packageManager": "npm@7.24.0",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1"
+  }
 }

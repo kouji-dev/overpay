@@ -1,0 +1,44 @@
+.text-input{
+    @apply min-w-[340px] p-md min-h-[56px] border border-gray-300 rounded-lg
+
+        focus:border-primary-base focus-visible:outline-0
+
+        font-medium text-lg leading-6 tracking-tightest
+}
+
+.password-div{
+    @apply min-w-[340px] p-md min-h-[56px] border border-gray-300 rounded-lg gap-12
+        flex flex-row items-center justify-between
+        focus:border-primary-base focus-visible:outline-0
+}
+
+.password-input{
+    @apply min-w-[271px] min-h-[24px] flex-row items-center p-md space-x-md
+        font-regular text-lg leading-6 tracking-semiTight text-gray-500
+}
+
+.input-eye{
+    @apply min-w-[24px] min-h-[24px] order-1 flex-grow-0 flex-none
+}
+
+.number-input{
+    @apply min-w-[56px] min-h-[56px] border border-gray-300 rounded-lg left-[419px] top-[186px] max-w-[56px] max-h-[56px]
+
+    focus:border-primary-base focus-visible:outline-0
+}
+
+.search-div{
+    @apply min-w-[340px] p-md min-h-[56px] border border-gray-300 rounded-lg gap-12
+    flex flex-row items-center
+    focus:border-primary-base focus-visible:outline-0 order-1 grow
+}
+
+.search-icon{
+    @apply flex-none order-none flex-grow-0 min-w-[24px] min-h-[24px] max-w-[24px] max-w-[24px]
+}
+
+.search-input{
+    @apply min-w-[271px] min-h-[24px] items-center p-md space-x-md
+    font-regular text-lg leading-6 tracking-semiTight text-gray-500
+    flex-row flex-none order-1 grow
+}

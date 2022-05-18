@@ -2,6 +2,7 @@ import HeadingPreview from "../components/HeadingPreview";
 import BodyPreview from "../components/BodyPreview";
 import ButtonPreview from "../components/ButtonPreview";
 import DropdownPreview from "../components/DropdownPreview";
+import {InputPreview} from "../components/InputPreview";
 
 
 export default function Docs() {
@@ -11,6 +12,7 @@ export default function Docs() {
             <BodyPreview />
             <ButtonPreview />
             <DropdownPreview />
+            <InputPreview />
         </div>
     );
 }

@@ -56,14 +56,19 @@ const DEFAULT_THEME = {
         sm: '12px',
         xs: '10px'
     },
+    letterSpacing: {
+        tightest: '0.2px',
+        semiTight: '0.3px'
+    },
     borderRadius: {
         lg: '12px',
         sm: '8px'
     },
     spacing: {
         sm: '8px',
-        md: '16px',
-        lg: '32px'
+        md: '12px',
+        lg: '16px',
+        xl: '32px'
     },
     animation: {
         fadeIn: 'fadeIn 700ms easeIn'
