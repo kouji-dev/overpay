@@ -1,8 +1,13 @@
 import cn from 'classnames';
 
-export const TextAreaInput = ({placeholder='username or email'}:any) => {
+export const TextAreaInput = ({placeholder='Text area'}:any) => {
 
-    const rootClassName = 'text-input';
+    const divClassName = 'textarea-div';
+    const rootClassName = 'textarea-input';
 
-    return <input className={cn(rootClassName)} placeholder={placeholder}/>
+    return (
+        <div className={cn(divClassName)}>
+            <input className={cn(rootClassName)} placeholder={placeholder}/>
+        </div>
+    )
 }

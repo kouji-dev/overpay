@@ -29,7 +29,7 @@
 
 .search-div{
     @apply min-w-[340px] p-md min-h-[56px] border border-gray-300 rounded-lg gap-12
-    flex flex-row items-center
+    flex flex-row items-center content-between
     focus:border-primary-base focus-visible:outline-0 order-1 grow
 }
 
@@ -41,4 +41,26 @@
     @apply min-w-[271px] min-h-[24px] items-center p-md space-x-md
     font-regular text-lg leading-6 tracking-semiTight text-gray-500
     flex-row flex-none order-1 grow
+}
+
+.plus-icon{
+    @apply flex-none order-1 grow-0
+}
+
+.textarea-div{
+    @apply min-w-[340px] min-h-[140px] left-[16px] top-[20px] p-md gap-12
+
+    border border-gray-300 rounded-lg
+
+    focus:border-primary-base focus-visible:outline-0
+
+    flex flex-row items-start
+}
+
+.textarea-input{
+    @apply flex flex-row items-start p-0 gap-4 tracking-semiTight
+
+    min-w-[307px] min-h-[24px]
+
+    flex-none order-none grow
 }
